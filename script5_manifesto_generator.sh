@@ -99,7 +99,7 @@ echo "$BUILD and sharing it freely with the world." >> "$OUTPUT"
 echo "Because the best way to honour the giants whose shoulders" >> "$OUTPUT"
 echo "I stand on is to become a shoulder for someone else." >> "$OUTPUT"
 echo "" >> "$OUTPUT"
-echo "Signed: $USER_ID | $DATE" >> "$OUTPUT"
+echo "Signed: Harshit18-web | $DATE" >> "$OUTPUT"
 echo "============================================" >> "$OUTPUT"
 
 # --- Confirm file was saved ---
