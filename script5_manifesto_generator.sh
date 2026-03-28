@@ -13,7 +13,7 @@
 # Note: aliases are shell-session scoped; they don't persist across scripts.
 
 # --- Define output file name using current username ---
-OUTPUT="manifesto_$(whoami).txt"
+OUTPUT="manifesto_Harshit18-web.txt"
 
 # --- Print welcome banner ---
 echo "============================================"
@@ -63,10 +63,10 @@ echo "--------------------------------------------"
 echo ""
 
 # --- Get current date in a readable format ---
-DATE=$(date '+%d %B %Y')
+DATE=28-03-2026
 
 # --- Get the username for personalisation ---
-USER_ID=$(whoami)
+USER_ID="Harshit18-web"
 
 # --- Compose the manifesto using string concatenation and echo >> ---
 # The >> operator appends to the file (creates it if it doesn't exist)
