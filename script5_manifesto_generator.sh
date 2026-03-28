@@ -103,7 +103,7 @@ echo "Signed: Harshit18-web | $DATE" >> "$OUTPUT"
 echo "============================================" >> "$OUTPUT"
 
 # --- Confirm file was saved ---
-echo "  Manifesto saved to: $OUTPUT"
+echo "  Manifesto saved to: Harshit18-web"
 echo ""
 
 # --- Display the generated manifesto ---
