@@ -2,8 +2,8 @@
 
 > Capstone audit of Git (GPL v2) for the VITyarthi Open Source Software course. Includes a 14-page project report covering origin story, license analysis, Linux footprint, and FOSS ecosystem, along with 5 bash shell scripts demonstrating practical Linux skills.
 
-**Student Name:** [Your Full Name]  
-**Registration Number:** [Your Registration Number]  
+**Student Name:** [HARSHIT]  
+**Registration Number:** [24BAI10967]  
 **Course:** Open Source Software (NGMC) — VITyarthi  
 **Software Audited:** Git — Distributed Version Control System  
 **License of Audited Software:** GNU General Public License v2 (GPL v2)  
