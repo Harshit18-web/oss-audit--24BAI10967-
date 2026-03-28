@@ -14,10 +14,10 @@ SOFTWARE_CHOICE="Git"                # Chosen open-source software
 # --- Gather system information using command substitution ---
 KERNEL=$(uname -r)                   # Get Linux kernel version
 DISTRO=$(lsb_release -d 2>/dev/null | cut -f2 || cat /etc/os-release | grep PRETTY_NAME | cut -d'"' -f2)
-USER_NAME=$(whoami)                  # Get current logged-in user
+USER_NAME=Harshit18-web                # Get current logged-in user
 HOME_DIR=$HOME                       # Get home directory of current user
 UPTIME=$(uptime -p)                  # Get system uptime in human-readable form
-CURRENT_DATE=$(date '+%A, %d %B %Y %H:%M:%S')   # Get current date and time
+CURRENT_DATE=28-03-2026   # Get current date and time
 
 # --- License information for the OS ---
 OS_LICENSE="GNU General Public License version 2 (GPL v2)"
@@ -29,9 +29,9 @@ echo "================================================================"
 echo ""
 
 # --- Student info section ---
-echo "  Student  : $STUDENT_NAME"
-echo "  Reg No.  : $REG_NUMBER"
-echo "  Software : $SOFTWARE_CHOICE"
+echo "  Student  :HARSHIT"
+echo "  Reg No.  : 24BAI10967"
+echo "  Software : GIT"
 echo ""
 
 # --- Divider line ---
@@ -42,10 +42,10 @@ echo "----------------------------------------------------------------"
 # --- Print gathered system details ---
 echo "  Distribution : $DISTRO"
 echo "  Kernel Ver.  : $KERNEL"
-echo "  Current User : $USER_NAME"
+echo "  Current User : Harshit18-web"
 echo "  Home Dir     : $HOME_DIR"
 echo "  System Up    : $UPTIME"
-echo "  Date & Time  : $CURRENT_DATE"
+echo "  Date & Time  :28-03-2026"
 echo ""
 
 # --- License information ---
