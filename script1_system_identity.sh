@@ -7,18 +7,17 @@
 # ============================================================
 
 # --- Student Information ---
-STUDENT_NAME="[HARSHIT]"           # Replace with your name
-REG_NUMBER="[24BAI10967]"       # Replace with your registration number
-SOFTWARE_CHOICE="Git"                # Chosen open-source software
+STUDENT_NAME="[HARSHIT]"          
+REG_NUMBER="[24BAI10967]"       
+SOFTWARE_CHOICE="Git"                
 
 # --- Gather system information using command substitution ---
-KERNEL=$(uname -r)                   # Get Linux kernel version
+KERNEL=$(uname -r)                   
 DISTRO=$(lsb_release -d 2>/dev/null | cut -f2 || cat /etc/os-release | grep PRETTY_NAME | cut -d'"' -f2)
-USER_NAME=Harshit18-web                # Get current logged-in user
-HOME_DIR=$HOME                       # Get home directory of current user
-UPTIME=$(uptime -p)                  # Get system uptime in human-readable form
-CURRENT_DATE=28-03-2026   # Get current date and time
-
+USER_NAME=Harshit18-web                
+HOME_DIR=$HOME                       
+UPTIME=$(uptime -p)                  
+CURRENT_DATE=28-03-2026   
 # --- License information for the OS ---
 OS_LICENSE="GNU General Public License version 2 (GPL v2)"
 
