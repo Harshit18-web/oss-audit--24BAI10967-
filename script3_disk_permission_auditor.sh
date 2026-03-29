@@ -6,12 +6,10 @@
 # Purpose: Audit key Linux directories for permissions and size
 # ============================================================
 
-# --- Define key system directories to audit ---
-# These are standard Linux FHS (Filesystem Hierarchy Standard) directories
+
 DIRS=("/etc" "/var/log" "/home" "/usr/bin" "/tmp" "/usr/share" "/var")
 
-# --- Git-specific directories to also check ---
-# Git stores its configuration and global data here
+
 GIT_DIRS=("/etc/gitconfig" "/usr/share/git-core" "/usr/lib/git-core")
 
 # --- Print report header ---
@@ -29,9 +27,9 @@ for DIR in "${DIRS[@]}"; do
     # Check if directory exists before trying to read it
     if [ -d "$DIR" ]; then
         # Get permissions, owner, and group using ls -ld, then extract fields with awk
-        PERMS=$(ls -ld "$DIR" | awk '{print $1}')     # e.g. drwxr-xr-x
-        OWNER=$(ls -ld "$DIR" | awk '{print $3}')     # e.g. root
-        GROUP=$(ls -ld "$DIR" | awk '{print $4}')     # e.g. root
+        PERMS=$(ls -ld "$DIR" | awk '{print $1}')
+        OWNER=$(ls -ld "$DIR" | awk '{print $3}')     
+        GROUP=$(ls -ld "$DIR" | awk '{print $4}')     
 
         # Get directory size; redirect stderr to suppress permission denied errors
         SIZE=$(du -sh "$DIR" 2>/dev/null | cut -f1)
@@ -86,8 +84,8 @@ echo "  GIT BINARY INFORMATION"
 echo "================================================================"
 
 if command -v git &>/dev/null; then
-    GIT_PATH=$(which git)                            # Get full path of git binary
-    GIT_VERSION=$(git --version)                     # Get version string
+    GIT_PATH=$(which git)                            
+    GIT_VERSION=$(git --version)                     
     GIT_PERMS=$(ls -l "$GIT_PATH" | awk '{print $1, $3, $4}')
 
     echo "  Binary Path : $GIT_PATH"
