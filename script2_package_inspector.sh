@@ -46,10 +46,10 @@ elif command -v dpkg &>/dev/null; then
     fi
 
 else
-    # Fallback: check using 'which' command
+    
     if which "$PACKAGE" &>/dev/null; then
         echo "  STATUS: $PACKAGE binary found at: $(which $PACKAGE)"
-        # Get version info directly from git
+        
         echo "  Version: $($PACKAGE --version 2>/dev/null)"
     else
         echo "  STATUS: Cannot determine — no known package manager found."
@@ -58,7 +58,7 @@ fi
 
 echo ""
 
-# --- Show git version if available ---
+
 if command -v git &>/dev/null; then
     echo "  Git Version Installed: $(git --version)"
 fi
@@ -66,8 +66,7 @@ fi
 echo ""
 echo "--------------------------------------------"
 
-# --- Case statement: print philosophy note based on package name ---
-# Each case prints the open-source philosophy of the software
+
 echo "  OPEN SOURCE PHILOSOPHY NOTE:"
 echo "--------------------------------------------"
 
